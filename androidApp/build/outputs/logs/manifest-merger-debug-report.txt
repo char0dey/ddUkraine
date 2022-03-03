@@ -1,0 +1,164 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/d8d28f7ae95a714baf03af377e4dcb4b/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/7b56b003a0a2d49172b3eefe5db67656/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/c6b8174244940cd4172bb22826cae823/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/0d63aef6c3a4ac66edb6b5a860ed35e5/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/250514d3cf7910e23b842dc65898b8ae/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/0f31a4903c88dc2268bbce9b28e8994d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/2d6da36e2a6667eec145584cb70d2d0d/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/042d5deb29322cfb958a2103b3c07f4e/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/6736b0d0293917ff64ad8f02f44019ab/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/a19d5a694382f649e9148e2a8ddea9a7/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/21761ac6b55f732deea0c0b49515be8d/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/93f3d3e0179b389b539486cbd2d3fb6c/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/c8801b0de6958a3478d70c71d8c9b2cb/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/489dca2e90f5d3666e8c37df88a82388/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/9e1ec58890474653722c8f9d216d95e6/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/9f30581934e0402b2d89af8852e550ac/transformed/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/411a4b5931dda50b614fa7632478e068/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/oleksandr/.gradle/caches/transforms-3/a77151453898e6f1880f07daf33d5aeb/transformed/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/oleksandr/.gradle/caches/transforms-3/768eb7e5df8e0289c0dc10340224464a/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/74b1bfa426b0ca172ca2b7eb53b2a4de/transformed/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/7d4bd2142eaf901e80465ac597f64446/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/a72976a7dff3c8435c7e114f0d79da35/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/8945fa88dfcaedee96a70e6ef82b37c5/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/44bdd60cfcace8544f4045c742854b79/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/82048f9480e0c4ae3efeb8730d038311/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:3:11-47
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:7:5-22:19
+MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/411a4b5931dda50b614fa7632478e068/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/411a4b5931dda50b614fa7632478e068/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:9:13-39
+	android:allowBackup
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:8:13-39
+	android:theme
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:10:13-44
+activity#io.ktor.samples.mpp.client.MainActivity
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:11:9-21:20
+	android:screenOrientation
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:13:13-55
+	android:windowSoftInputMode
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:14:13-55
+	android:name
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:12:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/d8d28f7ae95a714baf03af377e4dcb4b/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/d8d28f7ae95a714baf03af377e4dcb4b/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/7b56b003a0a2d49172b3eefe5db67656/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/7b56b003a0a2d49172b3eefe5db67656/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/c6b8174244940cd4172bb22826cae823/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/c6b8174244940cd4172bb22826cae823/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/0d63aef6c3a4ac66edb6b5a860ed35e5/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/0d63aef6c3a4ac66edb6b5a860ed35e5/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/250514d3cf7910e23b842dc65898b8ae/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/250514d3cf7910e23b842dc65898b8ae/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/0f31a4903c88dc2268bbce9b28e8994d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/0f31a4903c88dc2268bbce9b28e8994d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/2d6da36e2a6667eec145584cb70d2d0d/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/2d6da36e2a6667eec145584cb70d2d0d/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/042d5deb29322cfb958a2103b3c07f4e/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/042d5deb29322cfb958a2103b3c07f4e/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/6736b0d0293917ff64ad8f02f44019ab/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/6736b0d0293917ff64ad8f02f44019ab/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/a19d5a694382f649e9148e2a8ddea9a7/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/a19d5a694382f649e9148e2a8ddea9a7/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/21761ac6b55f732deea0c0b49515be8d/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/21761ac6b55f732deea0c0b49515be8d/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/93f3d3e0179b389b539486cbd2d3fb6c/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/93f3d3e0179b389b539486cbd2d3fb6c/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/c8801b0de6958a3478d70c71d8c9b2cb/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/c8801b0de6958a3478d70c71d8c9b2cb/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/489dca2e90f5d3666e8c37df88a82388/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/489dca2e90f5d3666e8c37df88a82388/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/9e1ec58890474653722c8f9d216d95e6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/9e1ec58890474653722c8f9d216d95e6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/9f30581934e0402b2d89af8852e550ac/transformed/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/9f30581934e0402b2d89af8852e550ac/transformed/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/411a4b5931dda50b614fa7632478e068/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/oleksandr/.gradle/caches/transforms-3/411a4b5931dda50b614fa7632478e068/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/oleksandr/.gradle/caches/transforms-3/a77151453898e6f1880f07daf33d5aeb/transformed/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/oleksandr/.gradle/caches/transforms-3/a77151453898e6f1880f07daf33d5aeb/transformed/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/oleksandr/.gradle/caches/transforms-3/768eb7e5df8e0289c0dc10340224464a/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/oleksandr/.gradle/caches/transforms-3/768eb7e5df8e0289c0dc10340224464a/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/74b1bfa426b0ca172ca2b7eb53b2a4de/transformed/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/74b1bfa426b0ca172ca2b7eb53b2a4de/transformed/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/7d4bd2142eaf901e80465ac597f64446/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/7d4bd2142eaf901e80465ac597f64446/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/a72976a7dff3c8435c7e114f0d79da35/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/a72976a7dff3c8435c7e114f0d79da35/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/8945fa88dfcaedee96a70e6ef82b37c5/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/8945fa88dfcaedee96a70e6ef82b37c5/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/44bdd60cfcace8544f4045c742854b79/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/44bdd60cfcace8544f4045c742854b79/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/82048f9480e0c4ae3efeb8730d038311/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/82048f9480e0c4ae3efeb8730d038311/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml

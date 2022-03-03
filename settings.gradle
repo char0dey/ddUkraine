@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+        maven {
+            url "https://maven.pkg.jetbrains.space/public/p/ktor/eap"
+        }
+    }
+
+}
+rootProject.name = 'client-mpp'
+
+
+include(':androidApp')
+include(':macApp')
+include(':jsApp')
+include(':shared')
