@@ -21,7 +21,7 @@ class ApplicationApi {
         callback(false)
     }
 
-    fun about(url: String, callback: (String, Boolean) -> Unit) {
+    fun about(url: String, timeout: Long, callback: (String, Boolean) -> Unit) {
         job = CoroutineScope(Dispatchers.Main).launch {
             try {
                 while (true) {
@@ -29,7 +29,7 @@ class ApplicationApi {
                         url(url)
                     }
                     callback(result.toString(), true)
-                    delay(300)
+                    delay(timeout)
                 }
             } catch (e: Exception) {
                 e.message?.let { callback(it, true) }

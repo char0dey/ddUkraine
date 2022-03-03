@@ -44,6 +44,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02000b
 int animator mtrl_fab_show_motion_spec 0x7f02000c
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f02000d
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f02000e
+int array long_array 0x7f110000
 int attr actionBarDivider 0x7f030000
 int attr actionBarItemBackground 0x7f030001
 int attr actionBarPopupTheme 0x7f030002
@@ -1757,6 +1758,7 @@ int id italic 0x7f0800b5
 int id item_touch_helper_previous_elevation 0x7f0800b6
 int id jumpToEnd 0x7f0800b7
 int id jumpToStart 0x7f0800b8
+int id labelTv 0x7f080177
 int id labeled 0x7f0800b9
 int id largeLabel 0x7f0800ba
 int id layout 0x7f0800bb
@@ -1919,6 +1921,7 @@ int id textinput_placeholder 0x7f080157
 int id textinput_prefix_text 0x7f080158
 int id textinput_suffix_text 0x7f080159
 int id time 0x7f08015a
+int id timeSpinner 0x7f080178
 int id title 0x7f08015b
 int id titleDividerNoCustom 0x7f08015c
 int id title_template 0x7f08015d

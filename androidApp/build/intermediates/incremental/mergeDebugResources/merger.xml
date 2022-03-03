@@ -5871,7 +5871,18 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style></file></source><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/generated/res/rs/debug"/><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/res/values/array.xml" qualifiers=""><string-array name="long_array">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array></file></source><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/generated/res/rs/debug"/><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>
