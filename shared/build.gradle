@@ -19,8 +19,9 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation "io.ktor:ktor-client-core:2.0.0-eap-256"
+                implementation "io.ktor:ktor-client-core:1.6.0"
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2-native-mt"
+                implementation("io.ktor:ktor-client-logging:1.6.0")
             }
         }
         commonTest {
@@ -33,7 +34,10 @@ kotlin {
             dependencies {
                 implementation 'com.google.android.material:material:1.2.1'
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2-native-mt"
-                implementation "io.ktor:ktor-client-android:2.0.0-eap-256"
+                implementation "io.ktor:ktor-client-android:1.6.0"
+                implementation "com.squareup.okhttp3:okhttp:4.9.2"
+                implementation "com.squareup.okhttp3:logging-interceptor:4.9.2"
+                implementation "io.ktor:ktor-client-okhttp:1.6.0"
             }
         }
         androidTest {
@@ -44,7 +48,8 @@ kotlin {
         }
         iosMain {
             dependencies {
-                implementation "io.ktor:ktor-client-ios:2.0.0-eap-256"
+                implementation "io.ktor:ktor-client-ios:1.6.0"
+                //implementation("io.ktor:ktor-client-ios:1.6.0")
             }
         }
         iosTest {
@@ -52,13 +57,13 @@ kotlin {
         }
         jsMain {
             dependencies {
-                implementation "io.ktor:ktor-client-js:2.0.0-eap-256"
+                implementation "io.ktor:ktor-client-js:1.6.0"
             }
         }
         macosX64Main {
             dependencies {
-                implementation "io.ktor:ktor-client-core:2.0.0-eap-256"
-                implementation "io.ktor:ktor-client-curl:2.0.0-eap-256"
+                implementation "io.ktor:ktor-client-core:1.6.0"
+                implementation "io.ktor:ktor-client-curl:1.6.0"
             }
         }
     }

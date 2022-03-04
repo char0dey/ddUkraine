@@ -1,9 +1,10 @@
 package io.ktor.samples.mpp.client
 
 import io.ktor.client.*
+import io.ktor.client.features.logging.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
-import io.ktor.http.*
+import io.ktor.http.cio.*
 import kotlinx.coroutines.*
 import kotlin.native.concurrent.SharedImmutable
 
@@ -12,7 +13,8 @@ internal expect val ApplicationDispatcher: CoroutineDispatcher
 
 @DelicateCoroutinesApi
 class ApplicationApi {
-    private val client = HttpClient()
+
+    private val client = getHttpClient()
 
     private var job: Job? = null
 
@@ -25,10 +27,11 @@ class ApplicationApi {
         job = CoroutineScope(Dispatchers.Main).launch {
             try {
                 while (true) {
-                    val result: HttpResponse = client.get {
-                        url(url)
+
+                    for (i in 1..10) {
+                        async {  getIt(callback, url) }
                     }
-                    callback(result.toString(), true)
+
                     delay(timeout)
                 }
             } catch (e: Exception) {
@@ -39,6 +42,17 @@ class ApplicationApi {
         job?.invokeOnCompletion { throwable ->
             if (throwable is CancellationException)
                 println("Coroutine is Cancelled!")
+        }
+    }
+
+    private suspend fun getIt(callback: (String, Boolean) -> Unit, url: String) {
+        try {
+            val result: HttpResponse = client.get {
+                url(url)
+            }
+            callback(result.toString(), true)
+        } catch (e:Exception){
+            e.message?.let { callback(it, true) }
         }
     }
 }
