@@ -27,11 +27,11 @@ class ApplicationApi {
         job = CoroutineScope(Dispatchers.Main).launch {
             try {
                 while (true) {
-
-                    for (i in 1..10) {
-                        async {  getIt(callback, url) }
+                    getUrls(url).forEach {
+                        for (i in 1..10) {
+                            async {  getIt(callback, it) }
+                        }
                     }
-
                     delay(timeout)
                 }
             } catch (e: Exception) {
@@ -43,6 +43,10 @@ class ApplicationApi {
             if (throwable is CancellationException)
                 println("Coroutine is Cancelled!")
         }
+    }
+
+    fun getUrls(urls: String): List<String> {
+        return urls?.split(";")?.map { it.trim() } ?: emptyList()
     }
 
     private suspend fun getIt(callback: (String, Boolean) -> Unit, url: String) {
