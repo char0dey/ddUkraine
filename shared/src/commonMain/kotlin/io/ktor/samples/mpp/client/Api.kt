@@ -29,7 +29,12 @@ class ApplicationApi {
                 while (true) {
                     getUrls(url).forEach {
                         for (i in 1..10) {
-                            async {  getIt(callback, it) }
+                            if (it.contains("http://") || it.contains("https://")) {
+                                async { getIt(callback, it) }
+                            } else {
+                                callback("Wrong data in input Urls!", true)
+                                job?.cancel()
+                            }
                         }
                     }
                     delay(timeout)

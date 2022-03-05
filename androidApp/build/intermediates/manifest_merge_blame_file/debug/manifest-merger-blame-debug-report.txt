@@ -23,28 +23,27 @@
 16        android:debuggable="true"
 17        android:supportsRtl="true"
 17-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:9:13-39
-18        android:testOnly="true"
-19        android:theme="@style/AppTheme" >
-19-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:10:13-44
-20        <activity
-20-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:11:9-21:20
-21            android:name="io.ktor.samples.mpp.client.MainActivity"
-21-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:12:13-41
-22            android:screenOrientation="sensorPortrait"
-22-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:13:13-55
-23            android:windowSoftInputMode="adjustResize" >
-23-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:14:13-55
-24            <intent-filter>
-24-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:16:13-20:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:17-69
-25-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:17-77
-27-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+18        android:theme="@style/AppTheme" >
+18-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:10:13-44
+19        <activity
+19-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:11:9-21:20
+20            android:name="io.ktor.samples.mpp.client.MainActivity"
+20-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:12:13-41
+21            android:screenOrientation="sensorPortrait"
+21-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:13:13-55
+22            android:windowSoftInputMode="adjustResize" >
+22-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:14:13-55
+23            <intent-filter>
+23-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:16:13-20:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:17-69
+24-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:17-77
+26-->/Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

@@ -57,10 +57,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 if (!urlEt.text.isNullOrEmpty()) {
                     startBtn.text = "Stop DDoS"
                     api.about(urlEt.text.toString(), timeout) { res, isRun ->
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                            resultTv.text = "${LocalDateTime.now()} >>> $res"
-                        } else {
-                            resultTv.text = "${System.currentTimeMillis()} >>> $res"
+                        when {
+                            res.contains("Wrong data") -> {
+                                urlEt.error = "Wrong data in input Urs! need: http:// or https://"
+                                startBtn.text = "Stop DDoS"
+
+                            }
+                            Build.VERSION.SDK_INT >= Build.VERSION_CODES.O -> {
+                                resultTv.text = "${LocalDateTime.now()} >>> $res"
+                            }
+                            else -> {
+                                resultTv.text = "${System.currentTimeMillis()} >>> $res"
+                            }
                         }
                         isRunning = isRun
                     }
