@@ -127,3 +127,4 @@ ios/fastlane/test_output
 
 iOSInjectionProject/
 /build/
+/androidApp/build/
