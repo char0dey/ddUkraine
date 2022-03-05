@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "io.ktor.samples.mpp.client",
+  "applicationId": "ua.app.ddukraine.mpp.client",
   "variantName": "debug",
   "elements": [
     {

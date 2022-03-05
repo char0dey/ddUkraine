@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:1-114
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:1-114
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:1-114
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:1-116
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:1-116
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:1-116
 	package
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:70-112
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml:2:70-114
 		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml
 		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/src/androidMain/AndroidManifest.xml
 	xmlns:android

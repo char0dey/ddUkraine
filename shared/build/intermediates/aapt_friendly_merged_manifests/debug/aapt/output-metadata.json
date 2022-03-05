@@ -4,7 +4,7 @@
     "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "o.ktor.samples.mpp.client.shared",
+  "applicationId": "ua.app.ddukraine.mpp.client.shared",
   "variantName": "debug",
   "elements": [
     {

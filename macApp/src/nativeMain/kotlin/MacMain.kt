@@ -1,4 +1,4 @@
-import io.ktor.samples.mpp.client.*
+import ua.app.ddukraine.mpp.client.*
 import kotlinx.coroutines.runBlocking
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine

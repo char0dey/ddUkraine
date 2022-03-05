@@ -1,4 +1,4 @@
-#Sat Mar 05 13:00:40 EET 2022
+#Sat Mar 05 16:34:56 EET 2022
 base.0=/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

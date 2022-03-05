@@ -126,3 +126,4 @@ ios/fastlane/test_output
 .LSOverride
 
 iOSInjectionProject/
+/build/

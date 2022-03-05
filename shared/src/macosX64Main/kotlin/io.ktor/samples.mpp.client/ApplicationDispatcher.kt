@@ -1,4 +1,4 @@
-package io.ktor.samples.mpp.client
+package ua.app.ddukraine.mpp.client
 
 import kotlinx.coroutines.*
 

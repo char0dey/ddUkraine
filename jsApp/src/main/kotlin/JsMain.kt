@@ -1,4 +1,4 @@
-import io.ktor.samples.mpp.client.*
+import ua.app.ddukraine.mpp.client.*
 import kotlinx.browser.document
 
 fun main() {
