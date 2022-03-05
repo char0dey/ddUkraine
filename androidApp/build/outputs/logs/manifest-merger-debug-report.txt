@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/oleksandr/.gradle/caches/transforms-3/d8d28f7ae95a714baf03af377e4dcb4b/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -33,29 +33,31 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oleksandr/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/8945fa88dfcaedee96a70e6ef82b37c5/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/44bdd60cfcace8544f4045c742854b79/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/82048f9480e0c4ae3efeb8730d038311/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
 	package
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:3:11-47
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:4:5-41
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:1-24:12
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:7:5-22:19
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:8:5-26:19
 MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
@@ -67,35 +69,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/olek
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] /Users/oleksandr/.gradle/caches/transforms-3/8ada0f547536cf015579a3020314d983/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:9:13-39
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:10:13-39
+	tools:targetApi
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:14:9-28
 	android:allowBackup
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:8:13-39
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:9:13-39
 	android:theme
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:10:13-44
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:13:13-44
+	android:networkSecurityConfig
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:12:13-73
+	android:usesCleartextTraffic
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:11:13-48
 activity#io.ktor.samples.mpp.client.MainActivity
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:11:9-21:20
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:15:9-25:20
 	android:screenOrientation
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:13:13-55
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:17:13-55
 	android:windowSoftInputMode
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:14:13-55
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:18:13-55
 	android:name
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:12:13-41
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:17-69
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:17-77
+ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:23:27-74
 uses-sdk
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared] /Users/oleksandr/AndroidStudioProjects/ddUkraine/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.1] /Users/oleksandr/.gradle/caches/transforms-3/b03bdfae5f4d0196bc9b0e7728223190/transformed/material-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/oleksandr/.gradle/caches/transforms-3/6dc063fafa772c5a8bf27c5643c82904/transformed/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
@@ -152,13 +160,13 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/oleksandr/.gradle/cac
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/oleksandr/.gradle/caches/transforms-3/44bdd60cfcace8544f4045c742854b79/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/82048f9480e0c4ae3efeb8730d038311/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/oleksandr/.gradle/caches/transforms-3/82048f9480e0c4ae3efeb8730d038311/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/oleksandr/AndroidStudioProjects/ktor-samples/client-mpp/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml
