@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
-        "source": "/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/res/xml/network_security_config.xml"
+        "merged": "/Users/bogdankolomiets/StudioProjects/ddUkraine/androidApp/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/bogdankolomiets/StudioProjects/ddUkraine/androidApp/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/bogdankolomiets/StudioProjects/ddUkraine/androidApp/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/Users/bogdankolomiets/StudioProjects/ddUkraine/androidApp/src/main/res/xml/network_security_config.xml"
     }
 ]

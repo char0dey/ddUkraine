@@ -7,7 +7,7 @@ fun main() = runBlocking {
     Platform.isMemoryLeakCheckerActive = false // required until https://youtrack.jetbrains.com/issue/KT-43772 is fixed
 
     val result = suspendCoroutine<String> { continuation ->
-        ApplicationApi().about {
+        ApplicationApi().startSending {
             continuation.resume(it)
         }
     }
