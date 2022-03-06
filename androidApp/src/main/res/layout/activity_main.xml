@@ -1,67 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_view"
-    android:orientation="vertical"
+    android:padding="40dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-  <TextView
-      android:id="@+id/labelTv"
+  <androidx.constraintlayout.widget.Group
+      android:id="@+id/contentGroup"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:layout_marginLeft="40dp"
-      android:layout_marginRight="40dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      android:textSize="14sp"
-      android:text="Time in millis"/>
+      app:constraint_referenced_ids="labelTv, timeSpinner, urlEt, useProxyCheckBox, startBtn, resultTv, useCustomProxy"/>
 
-  <Spinner
-      android:id="@+id/timeSpinner"
-      android:layout_marginTop="10dp"
-      android:layout_marginLeft="40dp"
-      android:layout_marginRight="40dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" />
-
-  <androidx.appcompat.widget.AppCompatEditText
-    android:id="@+id/urlEt"
-      android:text="https://tomas.kz"
-      android:layout_marginTop="10dp"
-      android:layout_marginLeft="40dp"
-      android:layout_marginRight="40dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"/>
-
-  <androidx.appcompat.widget.AppCompatButton
-      android:id="@+id/startBtn"
-      android:layout_marginTop="10dp"
-      android:layout_marginLeft="40dp"
-      android:layout_marginRight="40dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Start DDos"
-      />
-
-  <TextView
-      android:id="@+id/resultTv"
+  <ProgressBar
+      android:id="@+id/progressBar"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:layout_marginLeft="40dp"
-      android:layout_marginRight="40dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:text="Hello World!"/>
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:visibility="gone"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/labelTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="14sp"
+        android:text="Time in millis"/>
+
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/labelTv"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/urlEt"
+        android:text="https://tomas.kz"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="140dp"
+        android:gravity="start"
+        android:scrollbars = "vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeSpinner"/>
+
+    <CheckBox
+        android:id="@+id/useProxyCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/urlEt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/useCustomProxy"
+        android:text="Use Auto Proxy"/>
+
+  <CheckBox
+      android:id="@+id/useCustomProxy"
+      android:text="Use custom proxy"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="@+id/useProxyCheckBox"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/useProxyCheckBox"/>
+
+  <EditText
+      android:id="@+id/customProxyEditText"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Example 127.0.0.1:80:user:password"
+      app:layout_constraintTop_toBottomOf="@+id/useCustomProxy"
+      app:layout_constraintStart_toStartOf="parent"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/resultTv"
+        android:layout_marginBottom="16dp"
+        android:text="Start DDos"
+        />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="140dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars = "vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Hello World!"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

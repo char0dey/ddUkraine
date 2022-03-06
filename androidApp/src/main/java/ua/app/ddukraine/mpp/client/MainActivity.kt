@@ -1,19 +1,25 @@
 package ua.app.ddukraine.mpp.client
 
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
+import androidx.constraintlayout.widget.Group
+import androidx.core.view.isVisible
+import ua.app.ddukraine.mpp.client.models.Proxy
 import java.time.LocalDateTime
 
 
 @Suppress("EXPERIMENTAL_API_USAGE")
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
-
+    lateinit var container: Group
+    lateinit var progressBar: ProgressBar
     var timeout = 100L
+    var api = ApplicationApi()
 
     override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
         timeout = parent.getItemAtPosition(pos).toString().toLong()
@@ -26,16 +32,20 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        container = findViewById(R.id.contentGroup)
+        progressBar = findViewById(R.id.progressBar)
+        val useProxyCheckBox: CheckBox = findViewById(R.id.useProxyCheckBox)
+        val useCustomProxyCheckBox: CheckBox = findViewById(R.id.useCustomProxy)
+        val customProxyEditText: EditText = findViewById(R.id.customProxyEditText)
         val resultTv: TextView = findViewById(R.id.resultTv)
+        resultTv.movementMethod = ScrollingMovementMethod()
         val startBtn: AppCompatButton = findViewById(R.id.startBtn)
         val urlEt: AppCompatEditText = findViewById(R.id.urlEt)
+        urlEt.movementMethod = ScrollingMovementMethod()
         val timeSpinner: Spinner = findViewById(R.id.timeSpinner)
         timeSpinner.onItemSelectedListener = this
 
         var isRunning: Boolean = false
-
-        val api = ApplicationApi()
 
         ArrayAdapter.createFromResource(
             this,
@@ -46,8 +56,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             timeSpinner.adapter = adapter
         }
 
-        startBtn.setOnClickListener {
+        useProxyCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                loadGeneratedProxies()
+            }
+            useCustomProxyCheckBox.isChecked = !isChecked
+        }
+        useCustomProxyCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
+            customProxyEditText.isVisible = isChecked
+            useProxyCheckBox.isChecked = !isChecked
+        }
 
+        startBtn.setOnClickListener {
             if (isRunning){
                 startBtn.text = "Start DDoS"
                 api.stop {
@@ -55,8 +75,23 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 }
             } else {
                 if (!urlEt.text.isNullOrEmpty()) {
+                    if (useCustomProxyCheckBox.isChecked) {
+                        if (customProxyEditText.text.toString().isBlank()) {
+                            Toast.makeText(this, "Empty proxy", Toast.LENGTH_LONG).show()
+                        } else {
+                            runCatching {
+                                val proxies = customProxyEditText.text.toString().split("\n")
+                                    .mapIndexed{ index, input -> Proxy.parse(input, index) }
+                                DI.proxyManager.saveProxies(proxies)
+                            }.onFailure {
+                                Toast.makeText(this, "Invalid input", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    }
+                    DI.proxyManager.isProxyEnabled = useProxyCheckBox.isChecked || useCustomProxyCheckBox.isChecked
                     startBtn.text = "Stop DDoS"
-                    api.about(urlEt.text.toString(), timeout) { res, isRun ->
+                    api = ApplicationApi()
+                    api.startSending(urlEt.text.toString(), timeout) { res, isRun ->
                         when {
                             res.contains("Wrong data") -> {
                                 urlEt.error = "Wrong data in input Urs! need: http:// or https://"
@@ -73,6 +108,22 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         isRunning = isRun
                     }
                 }
+            }
+        }
+    }
+
+    private fun loadGeneratedProxies() {
+        progressBar.isVisible = true
+        container.isVisible = false
+        DI.proxyManager.isProxyEnabled = false
+        api = ApplicationApi()
+        api.loadProxies {
+            progressBar.isVisible = false
+            container.isVisible = true
+            it.onSuccess { proxies ->
+                DI.proxyManager.saveProxies(proxies)
+            }.onFailure {
+                it.printStackTrace()
             }
         }
     }
