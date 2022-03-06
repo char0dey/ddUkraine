@@ -24,7 +24,7 @@ actual fun getHttpClient(): HttpClient {
             serializer = KotlinxSerializer(json)
         }
         val interceptor = HttpLoggingInterceptor()
-        interceptor.level = HttpLoggingInterceptor.Level.BASIC
+        interceptor.level = HttpLoggingInterceptor.Level.HEADERS
         engine {
             config { // this: OkHttpClient.Builder ->
                 followRedirects(true)
@@ -47,7 +47,7 @@ fun getUnsafeOkHttpClient(): OkHttpClient.Builder = runCatching {
         sslSocketFactory(createSslSocketFactory(), trustManager[0] as X509TrustManager)
         hostnameVerifier { hostname, session -> true }
         addInterceptor(HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
+            level = HttpLoggingInterceptor.Level.HEADERS
         })
         addProxy(DI.proxyManager)
     }

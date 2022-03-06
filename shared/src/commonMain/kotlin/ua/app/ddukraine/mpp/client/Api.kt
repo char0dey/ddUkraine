@@ -39,7 +39,7 @@ class ApplicationApi {
 
     private fun mapRawToProxy(rawFiles: List<String>): List<Proxy> {
         return rawFiles.map {
-            it.split("\n")
+            it.split("\n",";")
         }
             .flatten()
             .mapIndexed { index, proxyRaw ->
@@ -72,7 +72,12 @@ class ApplicationApi {
         callback(false)
     }
 
-    fun startSending(url: String, timeout: Long, threadCount: Int,callback: (String, Boolean) -> Unit) {
+    fun startSending(
+        url: String,
+        timeout: Long,
+        threadCount: Int,
+        callback: (String, Boolean) -> Unit
+    ) {
         job = CoroutineScope(Dispatchers.Main).launch {
             runCatching {
                 val urls = parseUrls(url)
@@ -101,7 +106,7 @@ class ApplicationApi {
     }
 
     private fun parseUrls(urls: String): List<String> {
-        return urls.split("\n").map { it.trim() }
+        return urls.split("\n", ";").map { it.trim() }
             .filter { it.contains("http://") || it.contains("https://") }
     }
 
