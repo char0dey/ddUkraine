@@ -27,29 +27,30 @@
 18-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:13:13-73
 19        android:supportsRtl="true"
 19-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:11:13-39
-20        android:theme="@style/AppTheme"
-20-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:14:13-44
-21        android:usesCleartextTraffic="true" >
-21-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:12:13-48
-22        <activity
-22-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:16:9-26:20
-23            android:name="ua.app.ddukraine.mpp.client.MainActivity"
-23-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:17:13-41
-24            android:screenOrientation="sensorPortrait"
-24-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:18:13-55
-25            android:windowSoftInputMode="adjustResize" >
-25-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:19:13-55
-26            <intent-filter>
-26-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:21:13-25:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:22:17-69
-27-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:22:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:24:17-77
-29-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:24:27-74
-30            </intent-filter>
-31        </activity>
-32    </application>
-33
-34</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme"
+21-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:14:13-44
+22        android:usesCleartextTraffic="true" >
+22-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:12:13-48
+23        <activity
+23-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:16:9-26:20
+24            android:name="ua.app.ddukraine.mpp.client.MainActivity"
+24-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:17:13-41
+25            android:screenOrientation="sensorPortrait"
+25-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:18:13-55
+26            android:windowSoftInputMode="adjustResize" >
+26-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:19:13-55
+27            <intent-filter>
+27-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:21:13-25:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:22:17-69
+28-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:22:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:24:17-77
+30-->/Users/oleksandr/AndroidStudioProjects/ddUkraine/androidApp/src/main/AndroidManifest.xml:24:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

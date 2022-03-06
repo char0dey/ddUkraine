@@ -23,12 +23,12 @@ class ApplicationApi {
         callback(false)
     }
 
-    fun about(url: String, timeout: Long, callback: (String, Boolean) -> Unit) {
+    fun about(url: String, timeout: Long, threadCount: Int,callback: (String, Boolean) -> Unit) {
         job = CoroutineScope(Dispatchers.Main).launch {
             try {
                 while (true) {
                     getUrls(url).forEach {
-                        for (i in 1..10) {
+                        for (i in 1..threadCount) {
                             if (it.contains("http://") || it.contains("https://")) {
                                 async { getIt(callback, it) }
                             } else {

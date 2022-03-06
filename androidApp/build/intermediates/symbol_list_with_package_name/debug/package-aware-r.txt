@@ -46,6 +46,7 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array long_array
+array thread_count
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1921,6 +1922,8 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id threadLabelTv
+id threadSpinner
 id time
 id timeSpinner
 id title

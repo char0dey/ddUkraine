@@ -11,17 +11,10 @@ import java.time.LocalDateTime
 
 
 @Suppress("EXPERIMENTAL_API_USAGE")
-class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
-    var timeout = 100L
-
-    override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
-        timeout = parent.getItemAtPosition(pos).toString().toLong()
-    }
-
-    override fun onNothingSelected(parent: AdapterView<*>) {
-        timeout = 500L
-    }
+    var timeout = 500L
+    var threadCount = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +24,27 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val startBtn: AppCompatButton = findViewById(R.id.startBtn)
         val urlEt: AppCompatEditText = findViewById(R.id.urlEt)
         val timeSpinner: Spinner = findViewById(R.id.timeSpinner)
-        timeSpinner.onItemSelectedListener = this
+        val threadSpinner: Spinner = findViewById(R.id.threadSpinner)
+
+        timeSpinner.onItemSelectedListener = object :  AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
+                timeout = parent.getItemAtPosition(pos).toString().toLong()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                timeout = 500L
+            }
+        }
+
+        threadSpinner.onItemSelectedListener = object :  AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
+                threadCount = parent.getItemAtPosition(pos).toString().toInt()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                threadCount = 10
+            }
+        }
 
         var isRunning: Boolean = false
 
@@ -46,6 +59,15 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             timeSpinner.adapter = adapter
         }
 
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.thread_count,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            threadSpinner.adapter = adapter
+        }
+
         startBtn.setOnClickListener {
 
             if (isRunning){
@@ -56,7 +78,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             } else {
                 if (!urlEt.text.isNullOrEmpty()) {
                     startBtn.text = "Stop DDoS"
-                    api.about(urlEt.text.toString(), timeout) { res, isRun ->
+                    api.about(urlEt.text.toString(), timeout, threadCount) { res, isRun ->
                         when {
                             res.contains("Wrong data") -> {
                                 urlEt.error = "Wrong data in input Urs! need: http:// or https://"
