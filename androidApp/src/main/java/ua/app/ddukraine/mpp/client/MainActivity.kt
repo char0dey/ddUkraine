@@ -15,13 +15,10 @@ import java.time.LocalDateTime
 
 
 @Suppress("EXPERIMENTAL_API_USAGE")
-class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class MainActivity : AppCompatActivity() {
     lateinit var container: Group
     lateinit var progressBar: ProgressBar
-    var timeout = 100L
     var api = ApplicationApi()
-class MainActivity : AppCompatActivity() {
-
     var timeout = 500L
     var threadCount = 10
 
