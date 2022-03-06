@@ -82,7 +82,7 @@ class ApplicationApi {
                 while (enabled) {
                     urls.forEach {
                         for (i in 1..threadCount) {
-                            sendRequest(it, callback)
+                            async { sendRequest(it, callback) }
                         }
                     }
                     delay(timeout)

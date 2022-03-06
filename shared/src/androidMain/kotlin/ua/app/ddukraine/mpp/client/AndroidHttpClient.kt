@@ -24,7 +24,7 @@ actual fun getHttpClient(): HttpClient {
             serializer = KotlinxSerializer(json)
         }
         val interceptor = HttpLoggingInterceptor()
-        interceptor.level = HttpLoggingInterceptor.Level.BODY
+        interceptor.level = HttpLoggingInterceptor.Level.BASIC
         engine {
             config { // this: OkHttpClient.Builder ->
                 followRedirects(true)

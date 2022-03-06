@@ -85,7 +85,9 @@ local.properties
 MaterialNavigationDrawerModule/build/
 /*/out
 /*/*/build
+/*/*/build/
 /*/*/production
+/*/*/production/
 *.iws
 *.ipr
 *~
@@ -126,5 +128,19 @@ ios/fastlane/test_output
 .LSOverride
 
 iOSInjectionProject/
+
 /build/
 /androidApp/build/
+/androidApp/build/intermediates
+/androidApp/build/outputs/
+/shared/build/
+/shared/build/intermediates/
+/shared/build/outputs/
+shared/build/
+androidApp/build/
+build/
+
+**/build
+androidApp/build/**
+shared/build/**
+
