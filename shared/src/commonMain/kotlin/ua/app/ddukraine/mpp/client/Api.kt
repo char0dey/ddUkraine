@@ -72,7 +72,7 @@ class ApplicationApi {
         callback(false)
     }
 
-    fun startSending(url: String, timeout: Long, callback: (String, Boolean) -> Unit) {
+    fun startSending(url: String, timeout: Long, threadCount: Int,callback: (String, Boolean) -> Unit) {
         job = CoroutineScope(Dispatchers.Main).launch {
             runCatching {
                 val urls = parseUrls(url)
@@ -81,7 +81,7 @@ class ApplicationApi {
 
                 while (enabled) {
                     urls.forEach {
-                        for (i in 1..5) {
+                        for (i in 1..threadCount) {
                             sendRequest(it, callback)
                         }
                     }
