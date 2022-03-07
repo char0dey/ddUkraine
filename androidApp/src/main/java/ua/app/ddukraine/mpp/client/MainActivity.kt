@@ -22,13 +22,13 @@ class MainActivity : AppCompatActivity() {
     var timeout = 500L
     var threadCount = 10
 
+    var proxyType = ProxyType.noProxy
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         container = findViewById(R.id.contentGroup)
         progressBar = findViewById(R.id.progressBar)
-        val useProxyCheckBox: CheckBox = findViewById(R.id.useProxyCheckBox)
-        val useCustomProxyCheckBox: CheckBox = findViewById(R.id.useCustomProxy)
         val customProxyEditText: EditText = findViewById(R.id.customProxyEditText)
         val resultTv: TextView = findViewById(R.id.resultTv)
         resultTv.movementMethod = ScrollingMovementMethod()
@@ -58,6 +58,41 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        val useNoProxyRb = findViewById<View>(R.id.useNoProxyRb) as RadioButton
+        val useProxyRb = findViewById<View>(R.id.useProxyRb) as RadioButton
+        val useCustomProxyRb = findViewById<View>(R.id.useCustomProxyRb) as RadioButton
+        val selectProxyRg = findViewById<View>(R.id.selectProxyRg) as RadioGroup
+
+
+        val radioButtonClickListener =
+            View.OnClickListener { v ->
+                val rb = v as RadioButton
+                when (rb.id) {
+                    R.id.useProxyRb -> {
+                        proxyType = ProxyType.autoProxy
+                        customProxyEditText.isVisible = false
+                        loadGeneratedProxies()
+                    }
+
+                    R.id.useCustomProxyRb -> {
+                        proxyType = ProxyType.customProxy
+                        customProxyEditText.isVisible = true
+                    }
+
+                    R.id.useNoProxyRb -> {
+                        proxyType = ProxyType.noProxy
+                        customProxyEditText.isVisible = false
+                    }
+                    else -> {
+                        proxyType = ProxyType.noProxy
+                    }
+                }
+            }
+
+        useNoProxyRb.setOnClickListener(radioButtonClickListener)
+        useCustomProxyRb.setOnClickListener(radioButtonClickListener)
+        useProxyRb.setOnClickListener(radioButtonClickListener)
+
         var isRunning: Boolean = false
 
         ArrayAdapter.createFromResource(
@@ -67,17 +102,6 @@ class MainActivity : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             timeSpinner.adapter = adapter
-        }
-
-        useProxyCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                loadGeneratedProxies()
-            }
-            useCustomProxyCheckBox.isChecked = !isChecked
-        }
-        useCustomProxyCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
-            customProxyEditText.isVisible = isChecked
-            useProxyCheckBox.isChecked = !isChecked
         }
 
         ArrayAdapter.createFromResource(
@@ -97,7 +121,7 @@ class MainActivity : AppCompatActivity() {
                 }
             } else {
                 if (!urlEt.text.isNullOrEmpty()) {
-                    if (useCustomProxyCheckBox.isChecked) {
+                    if (proxyType == ProxyType.customProxy) {
                         if (customProxyEditText.text.toString().isBlank()) {
                             Toast.makeText(this, "Empty proxy", Toast.LENGTH_LONG).show()
                         } else {
@@ -110,7 +134,7 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
                     }
-                    DI.proxyManager.isProxyEnabled = useProxyCheckBox.isChecked || useCustomProxyCheckBox.isChecked
+                    DI.proxyManager.isProxyEnabled = ((proxyType == ProxyType.autoProxy) || (proxyType == ProxyType.customProxy))
                     startBtn.text = "Stop DDoS"
                     api = ApplicationApi()
                     api.startSending(urlEt.text.toString(), timeout, threadCount) { res, isRun ->
@@ -148,5 +172,9 @@ class MainActivity : AppCompatActivity() {
                 it.printStackTrace()
             }
         }
+    }
+
+    enum class ProxyType {
+        autoProxy, customProxy, noProxy
     }
 }
